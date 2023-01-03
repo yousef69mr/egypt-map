@@ -1,7 +1,6 @@
 #egypt_map {
   padding: 10px;
-  outline: 2px solid var(--whiteColorDeam);
-  width: 60%;
+  width: 100%;
   transition: 1s all ease-in-out;
 }
 

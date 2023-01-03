@@ -20,7 +20,7 @@ const EgyptMap = () => {
     );
     setHeight(window.innerHeight);
 
-    console.log(mapSize);
+    // console.log(mapSize);
   });
 
   useEffect(() => {
@@ -30,9 +30,19 @@ const EgyptMap = () => {
   return (
     <section
       className={css.container}
-      style={{height: Height < mapSize ? `${Height - 10}px` : `${Height}px` }}
+      style={{ height: Height < mapSize ? `${Height - 10}px` : `${Height}px` }}
     >
-      <Map map_size={mapSize} sectionHeight={Height} governorates={data.Governorates} />
+      <div className={css.side_text}>
+        <h1>Welcome To Egypt</h1>
+        <p>The Ancient Sezilization in the middle east</p>
+      </div>
+      <div className={css.map_container}>
+        <Map
+          map_size={mapSize}
+          sectionHeight={Height}
+          governorates={data.Governorates}
+        />
+      </div>
     </section>
   );
 };
