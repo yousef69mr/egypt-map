@@ -17,6 +17,7 @@
   cursor: pointer;
 }
 
-#egypt_map svg *:hover {
+#egypt_map svg *:hover,
+.selected_location {
   fill: var(--PrimaryColor);
 }
